@@ -1,19 +1,20 @@
 import React from 'react';
+import n from './Navbar.module.css'
 
 
 const Navbar = () => {
     return (
         <nav className='nav'>
-            <div className='item'>
+            <div className={n.item}>
                 Profile
             </div>
-            <div className='item'>
+            <div className={n.item}>
                 Messages
             </div>
-            <div className='item'>
+            <div className={n.item}>
                 About me
             </div>
-            <div className='item'>
+            <div className={n.item}>
                 meet
             </div>
         </nav>
