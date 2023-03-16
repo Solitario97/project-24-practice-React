@@ -1,5 +1,9 @@
 .app-wrapper{
   display: grid;
+  height: 500px;
+  width: 1800px;
+  margin: 10px auto;
+
 
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
