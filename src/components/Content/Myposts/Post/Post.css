@@ -1,0 +1,7 @@
+.Post{
+    grid-area: c;
+    background-color: springgreen;
+  }
+.item {
+  color: #000;
+}
