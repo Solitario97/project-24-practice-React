@@ -6,7 +6,9 @@ import Mypost from './Myposts/Mypost';
 
 const Content = () => {
     return (
-        <Mypost/>
+        <div className={c.Content}>
+            <Mypost/>
+        </div>
     )
 }
 

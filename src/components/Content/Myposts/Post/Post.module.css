@@ -1,7 +1,4 @@
-.Post{
-    grid-area: c;
-    background-color: springgreen;
-  }
 .item {
   color: #000;
+  font-weight: bold;
 }

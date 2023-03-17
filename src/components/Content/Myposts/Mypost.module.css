@@ -1,4 +1,4 @@
-.posts{
-    grid-area: c;
-    background-color: springgreen;
-  }
+.item{
+  color: white;
+  font-weight: 400;
+}
