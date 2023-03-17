@@ -3,6 +3,7 @@ import c from './Mypost.module.css';
 import Post from './Post/Post';
 
 
+
 const Mypost = () => {
     return (
         <div>
