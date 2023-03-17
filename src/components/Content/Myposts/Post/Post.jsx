@@ -1,5 +1,5 @@
 import React from 'react';
-import c from './Myposts./Post.module.css';
+import c from './Post.module.css';
 
 
 const Post = () => {
