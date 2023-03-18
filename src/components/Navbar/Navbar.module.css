@@ -1,8 +1,17 @@
 .nav{
     grid-area: n;
     background-color: orangered;
+    padding: 25px;
   }
-  .item {
-    color: white;
+
+  .item a {
+    color: black;
     font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    margin-top: 3px;
+  }
+  .active{
+    color: red;
+    text-decoration: underline;
   }
