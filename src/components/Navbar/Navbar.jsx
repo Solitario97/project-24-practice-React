@@ -16,10 +16,14 @@ const Navbar = () => {
                 </a>
             </div>
             <div className={n.item}>
-                About me
+                <a href='/news'>
+                    News
+                </a>
             </div>
             <div className={n.item}>
-                meet
+                <a href='/music'>
+                    Music
+                </a>
             </div>
         </nav>
     )
