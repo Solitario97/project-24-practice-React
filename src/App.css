@@ -12,3 +12,8 @@
   "h h"
   "n c";
 }
+
+.main-content {
+    grid-area: c;
+    background-color: springgreen;
+}
