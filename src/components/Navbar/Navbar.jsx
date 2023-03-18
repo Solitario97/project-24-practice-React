@@ -6,10 +6,14 @@ const Navbar = () => {
     return (
         <nav className={n.nav}>
             <div className={n.item}>
-                Profile
+                <a href='/profile'>
+                    Profile
+                </a>
             </div>
             <div className={n.item}>
-                Messages
+                <a href='/dialogs'>
+                    Messages
+                </a>
             </div>
             <div className={n.item}>
                 About me
