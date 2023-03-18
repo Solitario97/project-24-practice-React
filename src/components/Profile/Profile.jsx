@@ -1,15 +1,15 @@
 import React from 'react';
-import c from './Content.module.css';
+import c from './Profile.module.css';
 import Mypost from './Myposts/Mypost';
 
 
 
-const Content = () => {
+const Profile = () => {
     return (
-        <div className={c.Content}>
+        <div className={c.Profile}>
             <Mypost/>
         </div>
     )
 }
 
-export default Content;
+export default Profile;

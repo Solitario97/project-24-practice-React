@@ -9,9 +9,9 @@ const Mypost = () => {
         <div className={c.item}>
             My posts
             <div className={c.item}>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message='Hello, my name is Amir' count="10"/>
+                <Post message='My first work with props' count="300"/>
+                <Post message='several day`s ago i bought macbook' count="1000"/>
             </div>
         </div>
     )

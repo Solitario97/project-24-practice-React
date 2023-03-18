@@ -2,11 +2,13 @@ import React from 'react';
 import c from './Post.module.css';
 
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={c.item}>
-            post 1
+            {props.message}
+            {" "}like: {props.count}   
         </div>
+        
     )
 }
 
