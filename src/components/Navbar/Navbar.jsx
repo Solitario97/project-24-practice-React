@@ -7,22 +7,22 @@ const Navbar = () => {
     return (
         <nav className={n.nav}>
             <div className={n.item} >
-                <NavLink to='/profile'>
-                    Profile
-                </NavLink>
+            <NavLink to="/profile" className={navData=>navData.isActive ? n.activeLink : n.item}>
+                 Profile 
+            </NavLink>
             </div>
             <div className={n.item}>
-                <NavLink to='/dialogs'>
+                <NavLink to='/dialogs'className={navData=>navData.isActive ? n.activeLink : n.item}>
                     Messages
                 </NavLink>
             </div>
             <div className={n.item}>
-                <NavLink to='/news'>
+                <NavLink to='/news' className={navData=>navData.isActive ? n.activeLink : n.item}>
                     News
                 </NavLink>
             </div>
             <div className={n.item}>
-                <NavLink to='/music'>
+                <NavLink to='/music' className={navData=>navData.isActive ? n.activeLink : n.item}>
                     Music
                 </NavLink>
             </div>
