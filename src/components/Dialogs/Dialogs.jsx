@@ -14,6 +14,12 @@ const DialogItem = (props) => {
     )
 }
 
+const Message = (props) => {
+    return (
+        <div className={s.message}>{props.message}</div>
+    )
+}
+
 const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
@@ -22,15 +28,15 @@ const Dialogs = (props) => {
                 <DialogItem name="Imran" id='2'/>
                 <DialogItem name="Altair" id='3'/>
                 <DialogItem name="Ecio" id='4'/>
-                <DialogItem name="franchesko" id='5'/>
+                <DialogItem name="Franchesko" id='5'/>
                 <DialogItem name="Albina" id='6'/>
                 <DialogItem name="German" id='7'/>
             </div>
             <div className={s.messages}>
-                <div className={s.message}>How are u?</div>
-                <div className={s.message}>do u know?</div>
-                <div className={s.message}>i love Turkey</div>
-                <div className={s.message}>Yes, u right</div>
+                <Message message='How are u?'/>
+                <Message message='Amir your two safes are full of money, where to put the money now'/>
+                <Message message='Have you already bought a Porsche or are you just going to get it ?'/>
+                <Message message="Let's fly to France for a couple of days on the way back"/>
             </div>
         </div>
     )
