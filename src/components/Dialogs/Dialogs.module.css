@@ -3,3 +3,11 @@
   grid-template-columns: 2fr 10fr;
 }
 
+.dialogsItem{
+  color: black;
+  font-weight: bold;
+}
+
+.message{
+  color: black;
+}
