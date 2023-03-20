@@ -6,7 +6,9 @@ const Post = (props) => {
     return (
         <div className={c.item}>
             {props.message}
-            {" "}like: {props.count}   
+            <div>
+                {" "}like: {props.count} 
+            </div>  
         </div>
         
     )
