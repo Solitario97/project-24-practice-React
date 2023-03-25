@@ -12,6 +12,15 @@
     margin-top: 3px;
   }
 
-.item a.activeLink {
+.item .activeLink {
    color: white
 }; 
+.friends{
+  margin-top: 30px;
+  display: flex;
+}
+.friend__item{
+  padding: 30px;
+  border-radius: 100%;
+  color: #000;
+}
