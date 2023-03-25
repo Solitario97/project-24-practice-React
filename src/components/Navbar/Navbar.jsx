@@ -27,9 +27,9 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className={n.friends}>
-                <a href="#" className={n.friend__item}>2</a>
-                <a href="#" className={n.friend__item}>2</a>
-                <a href="#" className={n.friend__item}>2</a>
+                <a href="#" className={n.friend__items}>2</a>
+                <a href="#" className={n.friend__items}>2</a>
+                <a href="#" className={n.friend__items}>2</a>
             </div>
         </nav>
     )
