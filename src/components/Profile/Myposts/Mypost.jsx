@@ -8,9 +8,24 @@ const Mypost = (props) => {
 
     let PostElement = props.PostsData.map(p=><Post message={p.message} count={p.count}/>)
 
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text);
+    }
+
+
+
     return (
         <div className={c.item}>
             My posts
+            <div>
+                <textarea ref={newPostElement}></textarea>
+            </div>
+            <div>
+                <button onClick={addPost}>add post</button>
+            </div>
             <div className={c.item}>
                 {PostElement}
             </div>
