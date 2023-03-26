@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { addPost } from "../../redux/state";
 import s from "./Dialogs.module.css";
 
 
@@ -22,6 +23,13 @@ const Message = (props) => {
 
 const Dialogs = (props) => {    
 
+
+    let newMessageElement = React.createRef();
+    let addMessage = () => {
+        let text = newMessageElement.current.value;
+        alert(addPost);
+    }
+
     let DialogElement = props.state.DialogData.map(d=><DialogItem name={d.name} id={d.id} />)
 
 
@@ -36,7 +44,14 @@ const Dialogs = (props) => {
             
             <div className={s.messages}>
                 { MessageElement }
+            <div>
+                <textarea ref={newMessageElement}></textarea>
             </div>
+            <div>
+                <button onClick={addMessage}>add message</button>
+            </div>
+            </div>
+           
         </div>
     )
 }
