@@ -27,7 +27,7 @@ const Dialogs = (props) => {
     let newMessageElement = React.createRef();
     let addMessage = () => {
         let text = newMessageElement.current.value;
-        alert(addPost);
+        alert(text);
     }
 
     let DialogElement = props.state.DialogData.map(d=><DialogItem name={d.name} id={d.id} />)

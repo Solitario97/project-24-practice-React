@@ -29,9 +29,9 @@ export let addPost = (postMessage) =>{
   let newPost = {
     message: postMessage,
     count: 0,
-  }
+  };
 
-  state.profilePage.PostsData.push(newPost)
-}
+  state.profilePage.PostsData.push(newPost);
+};
 
 export default state;
