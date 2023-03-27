@@ -1,3 +1,5 @@
+import {Rerender} from './../render';
+
 let state = {
 
     profilePage : {
@@ -32,6 +34,7 @@ export let addPost = (postMessage) =>{
   };
 
   state.profilePage.PostsData.push(newPost);
+  Rerender(state);
 };
 
 export default state;
