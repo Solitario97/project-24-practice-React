@@ -51,7 +51,6 @@ const Dialogs = (props) => {
                 <button onClick={addMessage}>add message</button>
             </div>
             </div>
-           
         </div>
     )
 }
