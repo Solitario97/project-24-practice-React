@@ -8,6 +8,7 @@ let state = {
             {message: 'My first work with props', count: '300'},
             {message: 'several day`s ago i bought macbook', count: '1000'},
           ],
+        newPostText: 'text'
     },
 
     messagePage : {
@@ -27,13 +28,18 @@ let state = {
     },
 }
 
-export let addPost = (postMessage) =>{
+export let addPost = () =>{
   let newPost = {
-    message: postMessage,
+    message: state.profilePage.newPostText,
     count: 0,
   };
 
   state.profilePage.PostsData.push(newPost);
+  Rerender(state);
+};
+
+export let updatePostText = (newText) =>{
+  state.profilePage.newPostText = newText;
   Rerender(state);
 };
 
