@@ -43,4 +43,5 @@ export let updatePostText = (newText) =>{
   Rerender(state);
 };
 
+
 export default state;
