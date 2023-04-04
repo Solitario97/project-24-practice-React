@@ -1,4 +1,6 @@
-import {Rerender} from './../render';
+let Rerender = () => {
+  console.log('change')
+}
 
 let state = {
 
@@ -28,7 +30,7 @@ let state = {
     },
 }
 
-export let addPost = () =>{
+export const addPost = () =>{
   let newPost = {
     message: state.profilePage.newPostText,
     count: 0,
@@ -38,10 +40,14 @@ export let addPost = () =>{
   Rerender(state);
 };
 
-export let updatePostText = (newText) =>{
+export const updatePostText = (newText) =>{
   state.profilePage.newPostText = newText;
   Rerender(state);
 };
+
+export const subscribe = (observer) =>{
+  Rerender = observer; 
+}
 
 
 export default state;
