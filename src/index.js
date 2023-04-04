@@ -17,6 +17,7 @@ let Rerender = (state) =>{
       </React.StrictMode>
   );}
 
+  
 Rerender(store.getState());
 
 store.subscribe(Rerender);
