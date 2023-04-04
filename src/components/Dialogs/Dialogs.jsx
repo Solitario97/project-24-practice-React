@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { addPost } from "../../redux/state";
 import s from "./Dialogs.module.css";
 
-
 const DialogItem = (props) => {
 
     let path = '/dialogs/' + props.id;
