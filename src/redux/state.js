@@ -49,5 +49,4 @@ export const subscribe = (observer) =>{
   Rerender = observer; 
 }
 
-
 export default state;
