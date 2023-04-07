@@ -1,6 +1,4 @@
-let Rerender = () => {
-  console.log('change')
-}
+
 
 let state = {
 
