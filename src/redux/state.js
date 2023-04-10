@@ -26,25 +26,25 @@ let state = {
             {message:"Let's fly to France for a couple of days on the way back", id:'4'},
           ],
     },
-}
 
-export const addPost = () =>{
-  let newPost = {
-    message: state.profilePage.newPostText,
-    count: 0,
-  };
+    addPost = () =>{
+      let newPost = {
+        message: state.profilePage.newPostText,
+        count: 0,
+      };
 
-  state.profilePage.PostsData.push(newPost);
-  Rerender(state);
+    state.profilePage.PostsData.push(newPost);
+    Rerender(state);
+    }
+    updatePostText = (newText) =>{
+    state.profilePage.newPostText = newText;
+    Rerender(state);
+    };
+
+    subscribe = (observer) =>{
+    Rerender = observer; 
+    }
+  
 };
-
-export const updatePostText = (newText) =>{
-  state.profilePage.newPostText = newText;
-  Rerender(state);
-};
-
-export const subscribe = (observer) =>{
-  Rerender = observer; 
-}
 
 export default state;
