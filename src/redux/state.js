@@ -1,6 +1,6 @@
+let store = {
 
-
-let state = {
+  _state:  {
 
     profilePage : {
         PostsData: [
@@ -26,25 +26,35 @@ let state = {
             {message:"Let's fly to France for a couple of days on the way back", id:'4'},
           ],
     },
+},
 
-    addPost = () =>{
-      let newPost = {
-        message: state.profilePage.newPostText,
-        count: 0,
-      };
+getState() {
+  return this._state;
+},
 
-    state.profilePage.PostsData.push(newPost);
-    Rerender(state);
-    }
-    updatePostText = (newText) =>{
-    state.profilePage.newPostText = newText;
-    Rerender(state);
-    };
+_callSubscriber() {
+  console.log('state changed');
+},
 
-    subscribe = (observer) =>{
-    Rerender = observer; 
-    }
-  
+addPost() {
+  let newPost = {
+    message: this._state.profilePage.newPostText,
+    count: 0,
+  };
+
+  this._state.profilePage.PostsData.push(newPost);
+  this._callSubscriber(this._state);
+},
+
+updatePostText(newText) {
+  this._state.profilePage.newPostText = newText;
+  this._callSubscriber(this._state);
+},
+
+subscribe(observer) {
+  this._callSubscriber = observer; 
+}
+
 };
 
-export default state;
+export default store;
