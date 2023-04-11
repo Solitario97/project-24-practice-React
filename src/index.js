@@ -11,8 +11,8 @@ let Rerender = (state) =>{
   root.render(
       <React.StrictMode>
           <App state={store.getState()}
-                addPost={store.addPost}
-                updatePostText={store.updatePostText}/>
+                addPost={store.addPost.bind(store)}
+                updatePostText={store.updatePostText.bind(store)}/>
       </React.StrictMode>
   );}
 
