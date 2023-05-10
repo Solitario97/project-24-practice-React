@@ -14,12 +14,13 @@ const Mypost = (props) => {
     }
 
 
-    
+
     let onPostChange = () =>{
         let text = newPostElement.current.value;
         props.updatePostText(text);
     }
 
+    
     return (
         <div className={c.item}>
             My posts
