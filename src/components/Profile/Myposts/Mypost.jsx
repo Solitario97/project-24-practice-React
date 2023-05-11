@@ -20,6 +20,7 @@ const Mypost = (props) => {
         props.updatePostText(text);
     }
 
+
     
     return (
         <div className={c.item}>
